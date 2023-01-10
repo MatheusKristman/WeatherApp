@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 25px;
+
+  @include breakpoint(smallScreen) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    padding: 25px 15%;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-container {
+      height: 35px;
+      width: auto;
+
+      @include breakpoint(smallScreen) {
+        height: 45px;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+
+    .socials {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      @include breakpoint(smallScreen) {
+        gap: 20px;
+      }
+
+      li .linkedin,
+      li .instagram,
+      li .github {
+        color: #fff;
+        font-size: 2rem;
+        text-decoration: none;
+
+        @include breakpoint(smallScreen) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
