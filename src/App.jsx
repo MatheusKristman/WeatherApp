@@ -113,7 +113,7 @@ function App() {
                     </div>
                 ) : (
                     <h2 className='weather-empty'>
-                        Digite acima uma cidade ou estado para pesquisar
+                        Digite acima uma cidade ou estado para ver o clima atual
                     </h2>
                 )}
             </main>
