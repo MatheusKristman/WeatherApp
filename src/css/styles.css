@@ -58,11 +58,12 @@ main .weather-empty {
 }
 main .search-box {
   width: 100%;
+  display: flex;
   margin: 0 0 75px;
 }
 main .search-box .search-bar {
   display: block;
-  width: 100%;
+  width: 70%;
   padding: 15px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -71,7 +72,7 @@ main .search-box .search-bar {
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 0px 0px 0px 16px;
   margin-top: -25px;
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
   color: #313131;
@@ -80,6 +81,28 @@ main .search-box .search-bar {
 }
 main .search-box .search-bar:focus {
   background-color: rgba(255, 255, 255, 0.75);
+}
+main .search-box .search-btn {
+  display: block;
+  width: 30%;
+  padding: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(125, 125, 125, 0.5);
+  border-radius: 0px 0px 16px 0px;
+  margin-top: -25px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #fafafa;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+main .search-box .search-btn:hover {
+  background-color: rgba(125, 125, 125, 0.75);
 }
 main .location-box .location {
   color: #fff;
@@ -172,8 +195,8 @@ main .weather-box .weather {
 }
 @media screen and (min-width: 768px) {
   .header__container .socials li .linkedin,
-.header__container .socials li .instagram,
-.header__container .socials li .github {
+  .header__container .socials li .instagram,
+  .header__container .socials li .github {
     font-size: 2.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
